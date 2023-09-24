@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+};
+
+html{
+    font-family:'Rubik', sans-serif;
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    font-weight: 400;
+    color:#bfbcbc;
+}
+
+
+/* Regarding the Max-width */
+
+/* .test{ 
+    100% does be the responsive web design 
+    /* width:1000px;   
+    background-color: blueviolet;
+    padding:5rem;
+    max-width: 800px;
+    font-size: 2rem;
+ 
+    color: #fff;
+ } ; */
+
+/***************************** */
+/* HEADER */
+/***************************** */
+
+.header{
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    height:9.5rem;
+    padding: 0 2.2rem;
+    background-color:fff6e6 ;
+}
+
+.logo-img{
+    /* fixed heigth to set the stick value */
+  height:4.2rem;
+}
+
+/* ********************* */
+/* Navigation */
+/* ******************** */
+
+.links{
+    display:flex;
+    gap:3.2rem;
+    list-style: none;
+    align-items: center;
+
+}
+
+.nav-link:link,
+.nav-link:visited{
+    display: inline-block;
+   text-decoration: none;
+   color:#3e3d3d;
+   font-weight: 600;
+   font-size:20px;
+  padding:9px;
+transition: all 0.3s;
+   
+}
+
+
+.nav-link:hover,
+.nav-link:active{
+ color:#853707;
+}
+
+.nav-link.nav-cta:link,
+.nav-link.nav-cta:visited{
+display: inline-block;
+background-color: #d6865a;
+
+
+border-radius: 9px;
+}
+
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta:active{
+color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/***************************** */
+ /* HERO -SECTION */
+ /***************************** */
+
+ .section-hero{
+ background-color: fff6e6;
+ padding:62px 0;
+ }
+
+ .hero{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 70rem;
+    margin:0 auto;
+    padding:0 3.2rem;
+    align-items: center;
+    gap: 72px 
+    
+   
+   
+ }
+
+ .hero-image{
+    width:100%;
+    height:auto;
+   
+ }
+
+ .heading{
+    line-height: 1.02;
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    color:#333;
+ }
+
+ .primary-heading{
+    font-size: 4.4rem;
+    margin-bottom:32px;
+    letter-spacing: -0.6px;
+    
+ }
+
+ .heading-secondary{
+     font-size: 3.2rem;
+     font-weight: 600;
+     margin-bottom: 6.2rem;
+
+ }
+
+ .sub-heading{
+    display:block;
+    text-transform: capitalize;
+    color:#853707;
+    margin-bottom: 3.2rem;
+    letter-spacing: 1;
+ }
+
+ .hero-description{
+    font-size: 22px;
+    margin-bottom: 64px;
+ 
+    
+ }
+
+.btn:link,.btn:visited{
+    display:inline-block;
+    text-decoration: none;
+    padding:16px 32px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 1s;
+    
+}
+
+.btn-full:link,.btn-full:visited{
+  background-color:#d6865a ;
+  color:#fff;
+  
+}
+.btn-full:hover,
+.btn-full:active {
+    background-color: #ba5b28;
+    color: #fff;
+
+}
+
+
+.btn-outline:link,
+.btn-outline:visited {
+    background-color: #fff;
+    color: #3e3d3d;
+
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: fff6e6;
+    color:#3e3d3d;
+    /* border:3px solid #fff */
+    /* Trick to add border inside by box-shadow */
+     box-shadow:inset  0 0 0 3px #fff;
+}
+
+.btn-margin{
+    margin-right: 32px !important;
+}
+
+.delivered-meals{
+    display:flex;
+    margin-top: 78px;
+    gap:16px;
+    justify-content: center;
+     align-items: center;
+   
+}
+
+.delivered-images{
+    display:flex;
+    
+  
+}
+
+.delivered-images img{
+    height:48px;
+    width:48px;
+    border-radius: 50%;
+    margin-right:-8px;
+    border:3px solid #fff;
+}
+
+.delivered-images img:last-child{
+    margin-right: 0;
+}
+
+.delivered-number{
+    font-size: 18px;
+    color:#853707 ;
+    font-weight: 600;
+}
+
+
+/* ******************* */
+/* REUSEABLE GRID */
+/* ******************* */
+
+.section-how{
+    padding:9.6rem 0;
+    
+}
+
+.container{
+    max-width: 100rem;
+    margin:0 auto;
+    padding:0 2.4rem;
+}
+
+.grid{
+    display: grid;
+    gap:3.2rem;
+    
+}
+
+.grid--2--column{
+grid-template-columns: repeat(2,1fr);
+}
+
+
+.grid--3--column {
+grid-template-columns: repeat(3, 1fr);
+}
+
+.step-img-box img{
+    width:25%;
+   
+   
+}
+
+.grid-aligns{
+    align-items: center;
+    
+}
+
+/* ******************* */
+/* SECTION HOW */
+/* ******************* */
+
+.step-number{
+    font-size:3.8rem;
+    font-weight:600;
+    color:#bbb;
+    margin-bottom:3.2rem;
+
+}
+
+.heading-tertiary{
+    font-weight:600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step-description{
+    font-size:1rem;
+    line-height: 1.5;
+
+   
+}
+.step-img-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img-box::before{
+    content: "";
+    display:block;
+     width:20%;
+/*  height:60%;  it does not work */
+     /* trick */
+     padding-bottom: 20%;
+     background-color: antiquewhite;
+     border-radius: 50%;
+     position: absolute;
+     /* top:50%;
+     left:50%; */
+     /* transform:translate(-50% -50%) */
+    z-index: -1;
+
+}
+
